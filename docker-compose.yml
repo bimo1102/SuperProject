@@ -21,7 +21,7 @@ services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
-      SA_PASSWORD: "1"
+      SA_PASSWORD: "Lam@270920"
       ACCEPT_EULA: "Y"
     ports:
       - "1433:1433"
@@ -37,3 +37,5 @@ services:
       - "8081:8081"
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongo
+      - ME_CONFIG_BASICAUTH_USERNAME=myadmin
+      - ME_CONFIG_BASICAUTH_PASSWORD=Lam@270920
