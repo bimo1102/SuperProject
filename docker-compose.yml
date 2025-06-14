@@ -6,16 +6,20 @@ services:
       context: ./backend/src
       dockerfile: Api/Dockerfile
     ports:
-      - "5000:80"
+      - "5000:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - sqlserver
       - mongo
   gateway:
-    build: ./backend/src/Gateway
+    build:
+      context: ./backend/src
+      dockerfile: Gateway/Dockerfile
     ports:
-      - "9000:80"
+      - "9000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - api
   # frontend:
