@@ -39,3 +39,7 @@ TestResults/
 # ASP.NET Core secrets
 **/appsettings.*.Development.json
 **/secrets.json
+
+# Optional: ignore debug folders under specific build target
+**/debug/
+**/debug/net8.0/

@@ -12,7 +12,12 @@ services:
     depends_on:
       - sqlserver
       - mongo
-
+  gateway:
+    build: ./backend/src/Gateway
+    ports:
+      - "9000:80"
+    depends_on:
+      - api
   # frontend:
   #   build: ./frontend
   #   ports:
