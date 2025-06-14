@@ -1,0 +1,41 @@
+# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vscode/
+.vs/
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Build results
+*.dll
+*.exe
+*.app
+*.pdb
+
+# Logs
+*.log
+
+# Others
+TestResults/
+*.db
+*.sqlite
+*.mdf
+*.ldf
+
+# Rider / JetBrains
+.idea/
+
+# ASP.NET Core secrets
+**/appsettings.*.Development.json
+**/secrets.json
