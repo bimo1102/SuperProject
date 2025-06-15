@@ -1,45 +1,51 @@
-# Build artifacts
-bin/
-obj/
+# Build results
+**/bin/
+**/obj/
+**/out/
 
 # User-specific files
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
 
-# Visual Studio
+# Rider / VSCode / VS settings
+.idea/
 .vscode/
-.vs/
+*.code-workspace
+
+# ASP.NET secret settings
+**/secrets/
+**/appsettings.*.Development.json
+.env
+
+# Entity Framework Migrations generated files (if needed)
+**/Migrations/
+
+# Logs
+**/logs/
+*.log
+
+# Test results
+TestResults/
+**/TestResults/
+
+# Dotnet tools
+**/.vs/
+**/.vscode/
+**/.tool/
+**/.DS_Store
 
 # NuGet
 *.nupkg
 packages/
 .nuget/
 
-# Build results
-*.dll
-*.exe
-*.app
-*.pdb
-
-# Logs
-*.log
-
 # Others
-TestResults/
 *.db
-*.sqlite
-*.mdf
-*.ldf
+*.mdb
+*.bak
 
-# Rider / JetBrains
-.idea/
-
-# ASP.NET Core secrets
-**/appsettings.*.Development.json
-**/secrets.json
-
-# Optional: ignore debug folders under specific build target
-**/debug/
-**/debug/net8.0/
+# Docker artifacts (optional)
+**/obj/Docker/
+docker-compose.override.yml
