@@ -1,0 +1,6 @@
+/backend/src/Api/bin
+/backend/src/Application/obj
+/backend/src/Domain/obj
+/backend/src/Gateway/obj
+/backend/src/Infrastructure/obj
+/backend/src/Persistence/obj
